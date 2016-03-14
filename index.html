@@ -3,24 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Match the state to the stamp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Stamp the state</h1>
-	<div id="stateImageHolder" class="droppable">
-		<img class="state" src="images/alabama.jpg"/>
+	<!-- NAVIGATION MENU -->
+	<div class="navbar">
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">games</a></li>
+			<li class="logo"><a href="#">SG</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">faq</a></li>
+		</ul>
+	</div> <!--END OF NAV-MENU -->
+
+	<!-- CONTENT  -->
+	<div class="container-fluid">
+		<h1>Stamp the state</h1>
+		<div class="row">
+			<div class="col-md-4 side-menu">
+				<a href="#" class="btn-danger mybtn">Start Over</a>
+				<a href="#" class="btn-danger mybtn">Back to Landing Page</a>
+			</div>
+			<div id="stateImageHolder" class="question droppable col-md-4">
+				<img class="state col-md-4" src="images/alabama.jpg"/>
+			</div>
+			<div class="colmd-4 hint-box"></div>
+		</div>
+		<div id="stats">
+			<p>You got <span id="currentCorrect">0</span> out of <span id="currentTotal">0</span> correct</p>
+
+		</div>
+		<div id="stampImageHolder">
+			<img src="images/alabama-stamp.jpg" alt="" class="stamp correct draggable">
+			<img src="images/alaska-stamp.jpg" alt="" class="stamp draggable">
+			<img src="images/arizona-stamp.jpg" alt="" class="stamp draggable">
+			<img src="images/arkansas-stamp.jpg" alt="" class="stamp draggable">
+		</div>
 	</div>
-	<div id="stats">
-		<p>You got <span id="currentCorrect">0</span> out of <span id="currentTotal">0</span> correct</p>
-		<a href="#">Start Over</a>
-		<a href="#">Back to Landing Page</a>
-	</div>
-	<div id="stampImageHolder">
-		<img src="images/alabama-stamp.jpg" alt="" class="stamp correct draggable">
-		<img src="images/alaska-stamp.jpg" alt="" class="stamp draggable">
-		<img src="images/arizona-stamp.jpg" alt="" class="stamp draggable">
-		<img src="images/arkansas-stamp.jpg" alt="" class="stamp draggable">
-	</div>
+	<!-- END OF CONTENT  -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
 	<script src="js/custom.js"></script>
