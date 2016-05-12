@@ -29,10 +29,10 @@
 		 	scrambledStates.push(otherStates.splice(Math.floor(Math.random() * otherStates.length),1)[0])
 		 }	
 
-		$('#stateImageHolder img').attr('src','/images/'+currentState+'.jpg');
+		$('#stateImageHolder img').attr('src','images/'+currentState+'.jpg');
 		$('#stampImageHolder').empty();
 		for(var i in scrambledStates){
-			$('#stampImageHolder').append('<img src=images/'+scrambledStates[i]+'-stamp.jpg class="draggable stamp" >');
+			$('#stampImageHolder').append('<img src="images/'+scrambledStates[i]+'-stamp.jpg" class="draggable stamp" >');
 		}
 		$('#stampImageHolder img[src*='+currentState+']').addClass('correct');
 		$('.draggable').draggable({ revert: "invalid" });
