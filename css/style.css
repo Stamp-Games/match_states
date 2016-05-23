@@ -5,6 +5,7 @@ body {
 .won .game{display:none;}
 .won .wonText{display:block;}
 .wonText{display:none;}
+li{color:white;}
 /* NAVIGATION MENU */
 .navbar {
   background: #433C31;
