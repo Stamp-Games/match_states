@@ -2,10 +2,10 @@ body {
   background: url("https://images.unsplash.com/photo-1442551382982-e59a4efb3c86?crop=entropy&dpr=2&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1400");
   background-size: cover;
 }
-.won .game{display:none;}
-.won .wonText{display:block;}
+.win .game{display:none;}
+.win .wonText{display:block;}
 .wonText{display:none;}
-li{color:white;}
+li{color:white;padding-left:10px;font-size:16px;}
 /* NAVIGATION MENU */
 .navbar {
   background: #433C31;
