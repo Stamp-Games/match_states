@@ -19,7 +19,7 @@
 			return
 		}
 		var rand = remainingStates ? randomNumber() : 0;
-		var currentState = remainingState.splice(randomNumber(),1);
+		var currentState = remainingStates.splice(randomNumber(),1);
 		var otherStates =[];
 		var nums = [];
 		while (nums.length < 3){
