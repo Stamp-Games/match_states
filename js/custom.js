@@ -59,7 +59,7 @@
 		accept:$('img.correct')
 	})
 	$('.draggable').draggable({ revert: "invalid" });
-	$('#startOver').click(function(){
+	$('.startOver').click(function(){
 		location.reload();
 	})
 }()
