@@ -1,6 +1,6 @@
 !function(){
 	var states =['alabama', 'alaska', 'arizona', 'arkansas', 'california', 'colorado', 'connecticut', 'delaware', 'florida', 'georgia', 'hawaii', 'idaho', 'illinois', 'indiana', 'iowa', 'kansas', 'kentucky', 'louisiana', 'maine', 'maryland', 'massachusetts', 'michigan', 'minnesota', 'mississippi', 'missouri', 'montana', 'nebraska', 'nevada', 'new_hampshire', 'new_jersey', 'new_mexico', 'new_york', 'north_carolina', 'north_dakota', 'ohio', 'oklahoma', 'oregon', 'pennsylvania', 'rhode_island', 'south_carolina', 'south_dakota', 'tennessee', 'texas', 'utah', 'vermont', 'virginia', 'washington', 'west_virginia', 'wisconsin', 'wyoming'];
-
+	var remainingStates = states;
 	var score = 0;
 	var count = 0;
 	function randomNumber() {
@@ -9,8 +9,17 @@
 	
 
 	function switchState(e,ui){
+		
 		$('#correct').show();
-		var currentState = states[randomNumber()]
+		score++;
+		$('#score').text(score);
+		if (!remainingStates){
+			$('body').addClass('win');
+			setTimeout(function(){$('#correct').fadeOut('fast');},1000);
+			return
+		}
+		var rand = remainingStates ? randomNumber() : 0;
+		var currentState = remainingState.splice(randomNumber(),1);
 		var otherStates =[];
 		var nums = [];
 		while (nums.length < 3){
