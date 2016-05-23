@@ -13,10 +13,10 @@
 		<ul>
 			<!-- <li><a href="#">home</a></li> -->
 			<!-- <li><a href="#">games</a></li> -->
-			<li><a href="#" id="startOver" class="btn-danger mybtn">Start Over</a></li>
+			<li><a href="#" class="btn-danger mybtn startOver">Start Over</a></li>
 			<li class="logo"><a href="#">Stamp the State</a></li>
 			<li><a href="#" class="btn-danger mybtn">Back to Games Home</a></li>
-			<!-- <li><a href="#">about</a></li> -->
+			 <li>Score: <span id="score">0</span>/50</li> 
 			<!-- <li><a href="#">faq</a></li> -->
 		</ul>
 	</div> <!--END OF NAV-MENU -->
@@ -25,6 +25,7 @@
 	<div class="container-fluid">
 	<div id="correct">Correct!!!</div>
 		<!-- <h1>Stamp the state</h1> -->
+		<div class="game">
 		<div class="row text-center">
 			
 			<div id="stateImageHolder" class="question droppable ">
@@ -37,6 +38,11 @@
 			<img src="images/alaska-stamp.jpg" alt="" class="stamp draggable">
 			<img src="images/arizona-stamp.jpg" alt="" class="stamp draggable">
 			<img src="images/arkansas-stamp.jpg" alt="" class="stamp draggable">
+		</div>
+		</div>
+		<div class="won">
+			<h1>You got stamped the whole United States!</h1>
+			 <h2><a href="#"  class="btn-danger mybtn startOver">Start Over</a></h2>
 		</div>
 	</div>
 	<!-- END OF CONTENT  -->
