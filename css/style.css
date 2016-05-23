@@ -5,6 +5,7 @@ body {
 .win .game{display:none;}
 .win .wonText{display:block;}
 .wonText{display:none;}
+.wonText h2{width:300px;margin:30px auto;}
 li{color:white;padding-left:10px;font-size:16px;}
 /* NAVIGATION MENU */
 .navbar {
@@ -38,6 +39,8 @@ li{color:white;padding-left:10px;font-size:16px;}
 .navbar li {
   display: inline-block;
   vertical-align: middle;
+  color: #fff;
+  padding: 7px 15px;
 }
 
 .navbar a {
@@ -47,7 +50,7 @@ li{color:white;padding-left:10px;font-size:16px;}
   text-transform: uppercase;
   /* margin-right: 3em; */
   cursor: pointer;
-  padding: 7px 15px;
+
 }
 
 .logo {
